@@ -1,0 +1,46 @@
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Interactivo de Matemáticas - 8° Básico</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+      @keyframes shake {
+        0%, 100% { transform: translateX(0); }
+        10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+        20%, 40%, 60%, 80% { transform: translateX(10px); }
+      }
+      .animate-shake-red {
+        animation: shake 0.5s ease-in-out;
+      }
+      @keyframes pulse-green {
+        0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.7); }
+        50% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(74, 222, 128, 0); }
+      }
+      .animate-pulse-green {
+        animation: pulse-green 0.7s ease-in-out;
+      }
+      @keyframes float-up {
+        0% { transform: translateY(0); opacity: 1; }
+        100% { transform: translateY(-50px); opacity: 0; }
+      }
+      .animate-float-up {
+        animation: float-up 1s ease-out forwards;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "jspdf": "https://esm.sh/jspdf@^3.0.1"
+  }
+}
+</script>
+</head>
+  <body class="bg-slate-900 text-white font-sans">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
