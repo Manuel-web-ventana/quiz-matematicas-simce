@@ -1,0 +1,5 @@
+{
+  "name": "Quiz Interactivo de Matemáticas - Octavo Básico",
+  "description": "Una aplicación de quiz educativo e interactivo para que los estudiantes de octavo básico practiquen para la prueba SIMCE de Matemáticas. Incluye gamificación, seguimiento del progreso y reportes detallados en PDF.",
+  "requestFramePermissions": []
+}
